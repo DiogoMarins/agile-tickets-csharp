@@ -20,6 +20,16 @@ namespace Tests.Models
         }
 
         [Test]
+        public void DeveVender3IngressoSeHa3Vagas()
+        {
+            Sessao sessao = new Sessao();
+            sessao.TotalDeIngressos = 3;
+
+            Assert.IsTrue(sessao.PodeReservar(3));
+        }
+
+
+        [Test]
         public void NaodeveVender3IngressoSeHa2Vagas()
         {
             Sessao sessao = new Sessao();

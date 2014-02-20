@@ -14,3 +14,8 @@ packages
 Web/Logs
 target/
 Web.Publish.xml
+[Bb]ackup/
+[Uu]pgradeLog.XML
+[Uu]pgradeLog.htm
+_[Uu]pgradeReport_Files/
+
