@@ -29,15 +29,6 @@ namespace Tests.Models
         }
 
         [Test]
-        public void DeveVender10IngressoSeHa10Vagas()
-        {
-            Sessao sessao = new Sessao();
-            sessao.TotalDeIngressos = 10;
-
-            Assert.IsTrue(sessao.PodeReservar(10));
-        }
-
-        [Test]
         public void DeveVender200IngressoSeHa200Vagas()
         {
             Sessao sessao = new Sessao();
@@ -62,15 +53,6 @@ namespace Tests.Models
             sessao.TotalDeIngressos = 10;
 
             Assert.IsTrue(sessao.PodeReservar(1));
-        }
-
-        [Test]
-        public void NaoDeveVender10IngressoSeHa2Vagas()
-        {
-            Sessao sessao = new Sessao();
-            sessao.TotalDeIngressos = 2;
-
-            Assert.IsFalse(sessao.PodeReservar(10));
         }
 
         [Test]
